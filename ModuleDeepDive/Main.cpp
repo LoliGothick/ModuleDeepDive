@@ -1,5 +1,5 @@
-import Maybe;
-import Result;
+import Maybe;      // YES
+import Result.def; // NO
 #include <concepts>
 
 int main() {
