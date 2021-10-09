@@ -14,6 +14,6 @@ export namespace mitama {
   {
     static_assert(
       [] { return false; }(),
-      "`result<T, E>::transpose` can only be used if and only if `T` is a `maybe<_>`.");
+      "`result<T, E>::transpose` can be used if and only if `T` is a `maybe<_>`.");
   }
 }
