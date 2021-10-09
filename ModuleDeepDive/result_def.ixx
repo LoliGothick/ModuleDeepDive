@@ -18,3 +18,10 @@ namespace mitama {
   };
 
 }
+
+export namespace mitama {
+  template <auto _ = false>
+  void transpose(...) {
+    static_assert(_, "DO NOT IMPORT `Result.def`, PLEASE IMPORT `Result` INSTEAD.");
+  }
+}

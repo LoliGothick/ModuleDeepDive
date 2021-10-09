@@ -9,4 +9,11 @@ export namespace mitama {
   {
     return {};
   }
+  template <class T>
+  void transpose(T&&)
+  {
+    static_assert(
+      [] { return false; }(),
+      "`result<T, E>::transpose` can only be used if and only if `T` is a `maybe<_>`.");
+  }
 }
